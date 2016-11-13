@@ -10,7 +10,8 @@ def main(argv):
 	
 	try:
 		catfacts = urlopen(url).read()
-		k = catfacts.split('", "')
+		facts_only = catfacts[12:-21]
+		k = f.split('", "')
 		for facts in k:
 			print '> ' + facts + '\n'
 
