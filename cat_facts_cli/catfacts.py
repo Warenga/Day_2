@@ -1,8 +1,9 @@
-import sys
+import sys, click
 
 from urllib2 import Request, urlopen, URLError
 
-def main(argv):
+@click.command()
+def main():
 
 	no_of_facts = raw_input('How many facts do you want?')
 
@@ -11,7 +12,7 @@ def main(argv):
 	try:
 		catfacts = urlopen(url).read()
 		facts_only = catfacts[12:-21]
-		k = f.split('", "')
+		k = facts_only.split('", "')
 		for facts in k:
 			print '> ' + facts + '\n'
 
@@ -19,4 +20,4 @@ def main(argv):
 		print 'Error code:', e
 
 if __name__ == '__main__':
-	main(sys.argv)
+	main()
