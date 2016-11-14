@@ -6,7 +6,7 @@
 2. HTTP & WEB
 
 ## Andelabs
-The Andelabs on this repository are:
+# The Andelabs on this repository are:
 	-Word count
 		- This is a function that accepts a string and returns a dictionary {words in the string : num of occurence}.  
 	-Max and min number
