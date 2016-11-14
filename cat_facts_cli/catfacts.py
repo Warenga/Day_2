@@ -1,5 +1,4 @@
 import sys, click, json
-from pprint import pprint
 from urllib2 import Request, urlopen, URLError
 
 @click.command()
@@ -17,15 +16,15 @@ def main():
 
 	"""
 
-	no_of_facts = raw_input('How many facts do you want?')
+	no_of_facts = raw_input('How many facts do you want? ')
 
 	if no_of_facts == '':
-		no_of_facts = '0'
-	elif int(no_of_facts):
+		no_of_facts = '0' 
+	try: 
 		if int(no_of_facts) > 100:
 			print 'Woah!! too many facts. Can only display maximum of 100 facts'
 			no_of_facts = raw_input('Please try again. How many facts do you want?')
-	else:
+	except:
 		print "Oh Oh...That's not a number"
 		no_of_facts = raw_input('Please try again. How many facts do you want?')
 
