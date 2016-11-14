@@ -7,9 +7,9 @@
 
 ## Andelabs
 The Andelabs on this repository are:
-	a) Word count
+	-Word count
 		- This is a function that accepts a string and returns a dictionary {words in the string : num of occurence}.  
-	b) Max and min number
+	-Max and min number
 		- A function that accepts a list of numbers, calculates the maximum number and the minimum number and returns a list [min_num, max_num].
 
 ## HTTP & WEB
