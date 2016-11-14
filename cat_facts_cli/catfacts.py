@@ -34,7 +34,6 @@ def main():
 	
 	try:
 		catfacts = urlopen(url).read()
-
 		facts_only = catfacts[12:-21]
 		k = facts_only.split('", "')
 		for facts in k:
@@ -42,7 +41,7 @@ def main():
 
 		save_file = raw_input("Would you like to save these facts? 'Yes' 'No': ")
 
-		if save_file.lower() == 'Yes':
+		if save_file.lower() == 'yes':
 			try:
 				file = open('catfacts.txt', 'wb')
 				file.write(catfacts)
