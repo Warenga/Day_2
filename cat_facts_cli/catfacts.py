@@ -9,12 +9,14 @@ def main():
 	Call the script and it will ask you
 	how many facts you want to know.
 
-	After seeing your facts. You are given an 
-	option to save the facts and share it with others.
+	
+	After seeing your facts, you are given an option to save them
+	so that you can share it with others.
 
 	Enjoy :)
 
 	"""
+
 	no_of_facts = raw_input('How many facts do you want?')
 
 	if no_of_facts == '':
